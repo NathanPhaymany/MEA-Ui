@@ -1,0 +1,32 @@
+WindowManager:
+    MainWindow:
+    FireWindow:
+
+<MainWindow>:
+    name: "home"
+
+    FloatLayout:
+
+        Label:
+            text: " 10:30 \n Friday"
+            font_size: 35
+            pos_hint: {"x":0, "top":1}
+            size_hint: 0.25, 0.2
+
+
+        Button:
+            text: "Home"
+            font_size: 40
+            pos_hint: {"x":0, "top":0.8}
+            size_hint: 0.25, 0.2
+            on_release:
+
+                app.root.current = "fire"
+
+
+<FireWindow>
+    name: "fire"
+
+    Button:
+
+
